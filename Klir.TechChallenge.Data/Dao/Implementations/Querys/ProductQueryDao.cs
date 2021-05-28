@@ -12,7 +12,7 @@ namespace Klir.TechChallenge.Data.Dao.Implementations.Querys
 {
     public class ProductQueryDao : QueryRepository<Product>, IProductQueryDao
     {
-        public ProductQueryDao(IKlirContext pragmaticContext) : base(pragmaticContext)
+        public ProductQueryDao(IKlirContext klirContext) : base(klirContext)
         {
         }
     }

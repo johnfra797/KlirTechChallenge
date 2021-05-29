@@ -4,4 +4,24 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="src\app\Interfaces\Product.ts" />
+    <None Remove="src\app\Interfaces\ProductRequest.ts" />
+    <None Remove="src\app\Interfaces\ShoppingCart.ts" />
+    <None Remove="src\app\Interfaces\ShoppingCartCreateResponse.ts" />
+    <None Remove="src\app\Interfaces\ShoppingCartRequest.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="src\app\Interfaces\Product.ts" />
+    <Compile Include="src\app\Interfaces\ProductRequest.ts" />
+    <Compile Include="src\app\Interfaces\ShoppingCartRequest.ts" />
+    <Compile Include="src\app\Interfaces\ShoppingCartCreateResponse.ts" />
+    <Compile Include="src\app\Interfaces\ShoppingCart.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\app\Services\" />
+  </ItemGroup>
+
 </Project>

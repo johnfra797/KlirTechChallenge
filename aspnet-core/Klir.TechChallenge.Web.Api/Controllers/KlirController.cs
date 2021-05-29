@@ -26,13 +26,13 @@ namespace Klir.TechChallenge.Web.Api.Controllers
             _configuration = configuration;
         }
 
-        [HttpGet("products")]
+        [HttpPost("products")]
         public async Task<IActionResult> GetProducts(ProductRequest productRequest)
         {
             var response = await _mediator.Send(new GetProducts.Request(productRequest));
             return Ok(response);
         }
-        [HttpGet("shoppingCart")]
+        [HttpPost("get/shoppingCart")]
         public async Task<IActionResult> GetShoppingCart(ShoppingCartRequest shoppingCartRequest)
         {
             var response = await _mediator.Send(new GetShoppingCart.Request(shoppingCartRequest));

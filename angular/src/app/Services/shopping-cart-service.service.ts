@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import { Observable, of } from 'rxjs';
-import { map } from 'rxjs/operators';
 
 
 import { ShoppingCart } from '../Interfaces/ShoppingCart';

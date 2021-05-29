@@ -3,7 +3,7 @@ export interface Product
   Id: Number,
       Name: String,
     Price: Number,
-    Name: String
+    Promotion: String
 }
 
 export class Product

@@ -16,7 +16,7 @@ export class ProductServiceService {
     this._ServiceURL = `${environment.apiUrl}`;
   }
 
-  Get(): Promise<Product[]> {
+  Get(): Promise<Observable<Product>>{
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
     var comando = 'products';
